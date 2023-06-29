@@ -1,0 +1,25 @@
+<h1>Personajes de Harry Potter</h1>
+<p>Para agregar nuevos registros con faker ingresar en consola: rails db:seed </p>
+
+<div id="Pages">
+<div class= "table-wrapper">
+    <table class="container">
+    <thead>
+    <tr>
+            <th>name</th>
+            <th>location</th>
+            <th>house</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @character.each do |char| %>
+        <tr> 
+            <td> <%=char.name %> </td>
+            <td> <%=char.location %> </td>
+            <td> <%=char.house %> </td>
+        </tr>
+  <% end %>
+  </tbody>
+  <table>
+</div>
+</div>
